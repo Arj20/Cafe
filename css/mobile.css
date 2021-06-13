@@ -1,0 +1,61 @@
+/* HEADER */
+.header {
+  display: flex;
+  flex-direction: column;
+  height: 120vh;
+}
+
+/* TYPES IMAGES */
+.drink {
+  display: flex;
+  flex-direction: column;
+}
+
+/* TESTIMONIAL BUTTONS */
+.slide_btn {
+  display: none;
+}
+
+h4 {
+  line-height: 3rem;
+}
+
+.Testimonials > h2 {
+  display: none;
+}
+
+.Testimonials > h4 {
+  margin-bottom: 2rem;
+}
+
+/* MAIN-MENU */
+.desc > img {
+  width: 100%;
+  margin: 0;
+  height: 30rem;
+}
+
+.desc {
+  width: 100%;
+  margin: 0;
+  height: 30rem;
+  display: none;
+}
+
+.desc__active {
+  display: grid;
+}
+
+
+/* MAX-WIDTH:860PX */
+
+@media screen and (max-width: 860px) {
+  .Testimonials {
+    opacity: 0;
+  }
+
+  .navlists {
+    display: flex;
+    flex-direction: column;
+  }
+}

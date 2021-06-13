@@ -1,0 +1,454 @@
+/* SETTING FONTS */
+@import url("https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap");
+
+
+/* RESETTING ALL */
+* {
+  box-sizing: border-box;
+}
+
+h4 {
+  font-size: 1.4rem;
+  color: saddlebrown;
+}
+
+h2 {
+  color: brown;
+  line-height: 2.2rem;
+}
+
+body,
+html {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: content-box;
+  font-family: "Architects Daughter", cursive;
+  background: rgb(204, 22, 22);
+  color: white;
+  background: black;
+}
+
+:root {
+  --burlywood: burlywood;
+  --saddlebrown: saddlebrown;
+}
+
+/* HELPER CLASSES */
+
+.btn__active {
+  transform: translateY(-0.4rem);
+}
+.section__active {
+  display: grid;
+  transition: all ease-in 200ms;
+}
+
+.section__hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}
+
+.lazy-blur {
+  filter: blur(20px);
+}
+
+/* STICKY NAVBAR */
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  z-index: 10;
+  opacity: 0.9;
+  transition: all 0.3s;
+}
+
+.navlist {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3rem;
+  background: linear-gradient(to top left, rgb(75, 51, 33), rgb(114, 75, 47));
+  color: white;
+}
+
+.logo > h2 {
+  color: var(--burlywood);
+}
+
+.navlinks {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1rem;
+}
+
+.navlinks > li > a {
+  text-decoration: none;
+  color: var(--burlywood);
+  font-size: 1.3rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.navlinks > li > a:hover {
+  color: black;
+}
+
+.navlinks > li > button {
+  border: none;
+  outline: none;
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  border-radius: 0.5rem;
+  cursor: pointer;
+  z-index: 5;
+  background: var(--burlywood);
+  box-shadow: 0px 2px 5px black;
+  font-family: "Architects Daughter", cursive;
+}
+
+.navlinks > li > button:hover {
+  background: var(--saddlebrown);
+  color: white;
+}
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 0.2rem;
+  color: var(--burlywood);
+}
+
+#logo_img {
+  background: center cover/center;
+  height: 2rem;
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+/* Header */
+
+.header {
+  background: inherit;
+  display: grid;
+  grid-template-columns: 4fr 3fr;
+  height: 60vh;
+  margin: 4rem 12rem;
+  grid-gap: 4rem;
+}
+
+.header_img {
+  background: url("../img/Coffee-header.jpg") no-repeat center center/cover;
+  height: 100%;
+  width: 20rem;
+  border-radius: 1rem;
+}
+
+/* LOGO */
+.about {
+  display: flex;
+  flex-direction: column;
+  line-height: 2rem;
+}
+
+.about > h1 {
+  font-size: 3rem;
+  color: saddlebrown;
+  line-height: 3.5rem;
+}
+.about > h4 {
+  font-size: 2rem;
+}
+
+.about > button {
+  text-align: start;
+  width: 18rem;
+  outline: none;
+  border: none;
+  padding: 1.2rem 0rem;
+  font-size: 1.5rem;
+  font-family: "Architects Daughter", cursive;
+  background: inherit;
+  color: white;
+  cursor: pointer;
+  cursor: pointer;
+}
+
+.about > button:hover {
+  color: var(--burlywood);
+}
+
+.highlight {
+  color: var(--burlywood);
+}
+
+/* history */
+
+.history {
+  margin: 4rem 12rem;
+}
+
+.drink {
+  display: grid;
+  grid-template-columns: auto auto;
+  grid-template-rows: auto auto;
+  grid-gap: 0.8rem 0.8rem;
+}
+
+.drink-el {
+  width: 30rem;
+  background: var(--burlywood);
+  height: 18rem;
+  color: black;
+  z-index: 5;
+}
+
+.text {
+  box-sizing: border-box;
+  font-size: 1.3rem;
+  font-weight: 700;
+  padding: 1rem;
+}
+
+.drink-el > img {
+  background: no-repeat center center/cover;
+  height: 100%;
+  width: 100%;
+  transition: filter 0.5s;
+}
+
+/* MAIN MENU */
+
+.main-menu {
+  margin: 4rem 12rem;
+  line-height: 0rem;
+}
+
+.buttons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.4rem;
+}
+
+.btn {
+  outline: none;
+  border: none;
+  border-radius: 2rem;
+  padding: 1.2rem 0rem;
+  width: 8rem;
+  font-size: 1.2rem;
+  font-weight: bolder;
+  font-family: "Architects Daughter", cursive;
+  margin: 1.2rem 0rem;
+  cursor: pointer;
+  transition: all 0.3s;
+}
+/*
+.btn:hover {
+  transform: translateY(-0.4rem);
+} */
+
+/* MAIN-MENU BUTTONS */
+
+.main-dish {
+  background: brown;
+  box-shadow: 0px 2px 5px brown;
+  color: white;
+}
+
+.drink-menu {
+  background: saddlebrown;
+  box-shadow: 0px 2px 5px brown;
+  color: white;
+}
+
+.desserts {
+  background: brown;
+  box-shadow: 0px 2px 5px brown;
+  color: white;
+}
+
+.desserts:hover {
+  background: sandybrown;
+  color: black;
+  opacity: 0.5;
+}
+
+.main-dish:hover {
+  background: sandybrown;
+  color: black;
+  opacity: 0.5;
+}
+.drink-menu:hover {
+  background: sandybrown;
+  color: black;
+  opacity: 0.5;
+}
+
+/* MAIN MENU DESCRIPTION */
+.menu-images {
+  margin: 1rem auto;
+  width: 50%;
+}
+
+.desc > img {
+  width: 100%;
+  height: 30rem;
+}
+
+.desc {
+  height: 30rem;
+  display: none;
+}
+
+.desc__active {
+  display: grid;
+}
+
+/* TESTIMONIALS */
+.Testimonials {
+  margin: 0rem 12rem;
+  line-height: 0rem;
+}
+
+.slider {
+  position: relative;
+  max-width: 60rem;
+  height: 10rem;
+  margin: 1rem 0rem;
+}
+
+.slide {
+  position: absolute;
+  top: 0;
+  left: 0%;
+  width: 100%;
+  height: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  font-weight: bold;
+  color: var(--saddlebrown);
+  line-height: 1.4rem;
+  transition: transform 1s;
+  margin: auto;
+}
+
+.slide > p {
+  align-self: flex-end;
+  font-style: italic;
+}
+
+.slide_btn {
+  outline: none;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  padding: 0.6rem;
+  margin: auto;
+  font-size: 0.7rem;
+  background-color: white;
+  opacity: 1;
+  cursor: pointer;
+  font-size: 1rem;
+  font-weight: bolder;
+  z-index: 2;
+}
+
+.slide_btn:hover {
+  opacity: 0.7;
+}
+
+.left {
+  position: absolute;
+  top: 34%;
+  left: -5%;
+}
+
+.right {
+  position: absolute;
+  top: 34%;
+  right: -4%;
+}
+
+.dots {
+  position: absolute;
+  bottom: -10%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+}
+
+.dots__dot {
+  border: none;
+  background-color: #b9b9b9;
+  opacity: 0.7;
+  height: 0.7rem;
+  width: 0.7rem;
+  border-radius: 50%;
+  margin-right: 1.75rem;
+  cursor: pointer;
+  transition: all 0.5s;
+  box-shadow: 0 0.6rem 1.5rem rgb(0 0 0 / 70%);
+}
+
+.dots__dot--active {
+  /* background-color: #fff; */
+  background-color: white;
+  opacity: 1;
+}
+
+/* FOOTER */
+
+.footer {
+  margin-top: 5rem;
+  padding: 0.4rem 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: linear-gradient(to top left, rgb(75, 51, 33), rgb(114, 75, 47));
+  color: black;
+  font-size: 1.5rem;
+}
+
+.footer > button {
+  border: none;
+  border-radius: 8rem;
+  outline: none;
+  padding: 1rem;
+  font-size: 1.8rem;
+  font-weight: bolder;
+  width: 20rem;
+  font-family: "Architects Daughter", cursive;
+  background: var(--burlywood);
+  box-shadow: 0px 2px 5px black;
+  cursor: pointer;
+  margin-bottom: 4rem;
+  z-index: 5;
+  transition: all 0.3s;
+}
+
+.footer-button {
+  display: flex;
+  gap: 1.5rem;
+  font-size: 1.2rem;
+  font-weight: bold;
+}
+
+#footer_logo {
+  margin-top: 1.5rem;
+  border-radius: 50%;
+}
+
+.footer > button:hover {
+  transform: translateY(-0.4rem);
+  background: var(--saddlebrown);
+  color: white;
+}
