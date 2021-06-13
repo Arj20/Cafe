@@ -107,7 +107,7 @@ const lazy__img = document.querySelectorAll("img[data-src]");
 const loadImg = function (entries, observer) {
   const [entry] = entries;
   if (!entry.isIntersecting) return;
-  entry.target.src = "img/img-1.jpg";
+  entry.target.src = entry.target.dataset.src;
   entry.target.addEventListener("load", () => {
     entry.target.classList.remove("lazy-blur");
   });

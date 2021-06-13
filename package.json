@@ -1,16 +1,17 @@
 {
-  "name": "Coffee",
+  "name": "coffee",
   "version": "1.0.0",
   "description": "",
   "main": "index.html",
   "scripts": {
-    "dev": "parcel index.html",
-    "build": "parcel build index.html"
+    "dev": "node index.html",
+    "build": "nodemon index.html"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "parcel-bundler": "^1.12.5"
-  }
+    "nodemon": "^2.0.7"
+  },
+  "dependencies": {}
 }
