@@ -46,6 +46,15 @@ h4 {
   display: grid;
 }
 
+@media screen and (max-width: 735px) {
+  .navlinks {
+    width: 55rem;
+  }
+
+  .footer {
+    width: 48rem;
+  }
+}
 
 /* MAX-WIDTH:860PX */
 
@@ -57,5 +66,9 @@ h4 {
   .navlists {
     display: flex;
     flex-direction: column;
+  }
+
+  .footer-button {
+    gap: 0.8rem;
   }
 }
