@@ -37,6 +37,7 @@ html {
 .btn__active {
   transform: translateY(-0.4rem);
 }
+
 .section__active {
   display: grid;
   transition: all ease-in 200ms;
