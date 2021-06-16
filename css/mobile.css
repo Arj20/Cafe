@@ -83,6 +83,18 @@
   display: none;
 }
 
+#test__mobile {
+  display: none;
+}
+
+.one {
+  order: 2;
+}
+
+.two {
+  order: 1;
+}
+
 /* FOOTER */
 
 .footer {
