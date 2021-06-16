@@ -1,81 +1,102 @@
 /* HEADER */
-.header {
-  display: flex;
-  flex-direction: column;
-  height: 120vh;
+
+.navlist > .logo {
+  display: none;
 }
 
-/* TYPES IMAGES */
+.navlist {
+  width: 100%;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.navlinks {
+  margin: 1rem 0;
+  padding: 0;
+  text-align: center;
+}
+
+.navlinks > li > a {
+  font-size: 1rem;
+}
+
+.navlinks > li > button {
+  font-size: 1rem;
+}
+
+.header {
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.about {
+  line-height: 0.4rem;
+  margin: auto;
+}
+
+.about > h1 {
+  font-size: 2.4rem;
+}
+
+.about > h4 {
+  font-size: 2 rem;
+}
+
+.header_img {
+  background: url("../img/Coffee-header.jpg") no-repeat center center/cover;
+  height: 100%;
+  margin: auto;
+}
+
+/* TYPES */
+
+.section {
+  text-align: center;
+  margin: 1rem auto;
+  padding: 0;
+  font-size: 0.7rem;
+}
+
 .drink {
   display: flex;
   flex-direction: column;
 }
 
-.drink :nth-child(1) { order: 2; }
-.drink :nth-child(2) { order: 3; }
-.drink :nth-child(3) { order: 1; }
-.drink :nth-child(4) { order: 3; }
-.drink :nth-child(5) { order: 1; }
-
-
-/* TESTIMONIAL BUTTONS */
-.slide_btn {
-  display: none;
+/* MENU */
+.buttons {
+  flex-direction: column;
+  gap: 0.2rem;
 }
 
-h4 {
-  line-height: 3rem;
-}
-
-.Testimonials > h2 {
-  display: none;
-}
-
-.Testimonials > h4 {
+.menu-images {
+  width: 100%;
+  transform: translateY(2rem);
+  transition: tranform 0.3s;
   margin-bottom: 2rem;
 }
 
-/* MAIN-MENU */
-.desc > img {
-  width: 100%;
-  margin: 0;
-  height: 30rem;
-}
-
-.desc {
-  width: 100%;
-  margin: 0;
-  height: 30rem;
+.Testimonials {
   display: none;
 }
 
-.desc__active {
-  display: grid;
+/* FOOTER */
+
+.footer {
+  margin: auto;
+  margin-top: 4rem;
+  display: flex;
+  flex-direction: column;
 }
 
-@media screen and (max-width: 735px) {
-  .navlinks {
-    width: 55rem;
-  }
-
-  .footer {
-    width: 48rem;
-  }
+.footer > h1 {
+  font-size: 2rem;
+  width: 20rem;
 }
 
-/* MAX-WIDTH:860PX */
-
-@media screen and (max-width: 860px) {
-  .Testimonials {
-    opacity: 0;
-  }
-
-  .navlists {
-    display: flex;
-    flex-direction: column;
-  }
-
-  .footer-button {
-    gap: 0.8rem;
-  }
+.footer-button {
+  display: none;
 }

@@ -311,7 +311,7 @@ html {
 
 /* TESTIMONIALS */
 .Testimonials {
-  margin: 0rem 12rem;
+  margin: 0rem 14rem;
   line-height: 0rem;
 }
 
@@ -326,7 +326,7 @@ html {
   position: absolute;
   top: 0;
   left: 0%;
-  width: 100%;
+  width: 80%;
   height: 10rem;
   display: flex;
   flex-direction: column;
@@ -337,7 +337,7 @@ html {
   color: var(--saddlebrown);
   line-height: 1.4rem;
   transition: transform 1s;
-  margin: auto;
+  margin: 0rem 5rem;
 }
 
 .slide > p {
@@ -368,13 +368,13 @@ html {
 .left {
   position: absolute;
   top: 34%;
-  left: -5%;
+  left: 2%;
 }
 
 .right {
   position: absolute;
   top: 34%;
-  right: -4%;
+  right: 2%;
 }
 
 .dots {
