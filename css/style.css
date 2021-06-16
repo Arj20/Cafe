@@ -199,7 +199,7 @@ html {
 }
 
 .drink-el {
-  width: 30rem;
+  max-width: 30rem;
   background: var(--burlywood);
   height: 18rem;
   color: black;

@@ -11,6 +11,13 @@
   flex-direction: column;
 }
 
+.drink :nth-child(1) { order: 2; }
+.drink :nth-child(2) { order: 3; }
+.drink :nth-child(3) { order: 1; }
+.drink :nth-child(4) { order: 3; }
+.drink :nth-child(5) { order: 1; }
+
+
 /* TESTIMONIAL BUTTONS */
 .slide_btn {
   display: none;
