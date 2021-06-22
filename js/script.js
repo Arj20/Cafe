@@ -108,7 +108,6 @@ const loadImg = function (entries, observer) {
   const [entry] = entries;
   if (!entry.isIntersecting) return;
   entry.target.src = entry.target.dataset.src;
-  console.log(entry.target.src);
   entry.target.addEventListener("load", () => {
     entry.target.classList.remove("lazy-blur");
   });

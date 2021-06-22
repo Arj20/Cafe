@@ -313,6 +313,7 @@ html {
 .Testimonials {
   margin: 0rem 14rem;
   line-height: 0rem;
+  overflow-x: hidden;
 }
 
 .slider {
